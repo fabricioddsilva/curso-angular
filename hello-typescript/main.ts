@@ -19,3 +19,6 @@ class Matematica {
     }
 }
 
+var n1: string = 'asdlkasjd';
+
+
