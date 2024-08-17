@@ -3,7 +3,9 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
+import { CursosModule } from './cursos/cursos.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,8 @@ import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CursosModule
   ],
   providers: [
     provideClientHydration()
