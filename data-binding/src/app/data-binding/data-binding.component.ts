@@ -14,6 +14,13 @@ export class DataBindingComponent {
   atributo = '';
   forca: number = 0;
 
+  nome: string = 'abc';
+
+  pessoa = {
+    nome: 'Black',
+    idade: 20
+  }
+
   getValor(){
     return 1;
   }
