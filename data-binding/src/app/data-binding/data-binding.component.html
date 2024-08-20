@@ -14,7 +14,7 @@
     <img [src]="urlImagem">
   </article> -->
 
-  <article>
+  <!-- <article>
     <h1>Class e Style Binding</h1>
     <div>
       Selecione uma classe:
@@ -42,6 +42,21 @@
       [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">Só aparece em caso de erro</div>
     </div>
 
+
+  </article> -->
+
+  <article>
+    <h3>Event Binding</h3>
+    <div>
+      <button class="btn btn-primary" (click)="onClick()">Clica neu!!</button>
+      <h4>Atributos</h4>
+      Força:
+      <input type="text"
+      (keyup.enter)="atributoSalvo(valorSalvo.value)"
+      (blur)="atributoSalvo(valorSalvo.value)"
+      #valorSalvo>
+      <h5>Modificador de Forca: {{ forca }}</h5>
+    </div>
 
   </article>
 

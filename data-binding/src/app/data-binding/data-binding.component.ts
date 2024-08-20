@@ -11,6 +11,9 @@ export class DataBindingComponent {
   cursoAngular = true;
   urlImagem = 'https://picsum.photos/200/300';
 
+  atributo = '';
+  forca: number = 0;
+
   getValor(){
     return 1;
   }
@@ -18,5 +21,20 @@ export class DataBindingComponent {
   getCurtiCurso(){
     return true;
   }
+
+  botaoClicado(){
+  }
+
+  onClick(){
+    alert("Vai tomar no cu!!");
+  }
+
+  atributoSalvo(valor: string){
+    this.atributo = valor;
+    this.forca = Math.floor((parseInt(this.atributo) - 10) / 2)
+  }
+
+
+
 
 }
