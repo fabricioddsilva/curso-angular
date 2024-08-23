@@ -16,6 +16,8 @@ export class DataBindingComponent {
 
   nomeDoCurso: string = 'Angular';
 
+  valorInicial: number = 15;
+
   getValor(){
     return 1;
   }
@@ -34,6 +36,10 @@ export class DataBindingComponent {
   atributoSalvo(valor: string){
     this.atributo = valor;
     this.forca = Math.floor((parseInt(this.atributo) - 10) / 2)
+  }
+
+  onMudouValor(evento: any){
+    console.log(evento.novoValor);
   }
 
 
